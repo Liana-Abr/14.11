@@ -205,12 +205,12 @@ header button{
             width: 400px;
         }
         .block1{
-            width: 400px;
+            width: 250px;
             display: flex;
             flex-direction: column;
         }
         .block1 img{
-            width: 300px;
+            width: 250px;
             height: auto;
         }
         .block1 h2{
@@ -220,7 +220,7 @@ header button{
             font-size: 20px;
         }
         .block2{
-            width: 400px;
+            width: 250px;
         }
         .block2__info{
             width: 200px;
