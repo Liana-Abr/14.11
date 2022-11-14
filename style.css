@@ -187,7 +187,7 @@ header button{
     }
     .block2__info button{
         padding: 3px 51px;
-        margin: 5px 50px;
+        margin: 5px 50px 20px;
     }
     .block3{
         width: 460px;
@@ -235,7 +235,7 @@ header button{
         }
         .block2__info button{
             padding: 3px 51px;
-            margin: 5px 50px;
+            margin: 5px 50px 20px;
         }
         .block3{
             width: 380px;
