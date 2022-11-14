@@ -237,3 +237,21 @@ header button{
         }
         
 }
+
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) {
+
+        .block1{
+            width: 430px;
+        }
+        .block2{
+            width: 430px;
+        }
+        .block3{
+            width: 430px;
+        }
+
+        
+     }
