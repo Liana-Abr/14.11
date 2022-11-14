@@ -120,12 +120,46 @@ header button{
     background-color: black;
     color: #fff;
     padding: 10px 34px;
-    margin: 10px 50px;
+    margin: 10px 50px 50px;
     border: none;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
 }
+.block4{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    background-color: black;
+    color: white;
+
+}
+
+.block4 img{
+    width: 450px;
+    height: 300px;
+}
+
+.block4-right{
+    grid-column: 2;
+}
+.block4__left{
+    grid-column: 1;
+    position: relative;
+    top: 100px;
+    left: 400px;
+    font-size: 20px;
+}
+.block4 p{
+    width: 300px;
+}
+.block4 span{
+    position: relative;
+    top: 400px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
 @media screen and (max-width : 600px) {
     body{
         overflow-x: hidden;
@@ -191,6 +225,39 @@ header button{
     }
     .block3{
         width: 460px;
+    }
+    .block4{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+        background-color: black;
+        color: white;
+    
+    }
+    
+    .block4 img{
+        width: 400px;
+        height: 200px;
+    }
+    
+    .block4-right{
+        grid-column: 2;
+    }
+    .block4__left{
+        grid-column: 1;
+        position: relative;
+        top: 50px;
+        left: 200px;
+        font-size: 15px;
+    }
+    .block4 p{
+        width: 300px;
+    }
+    .block4 span{
+        position: relative;
+        top: 200px;
+        font-weight: 700;
+        font-size: 40px;
     }
 }
 
