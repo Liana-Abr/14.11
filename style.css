@@ -163,7 +163,7 @@ header button{
     }
     .block1 img{
         width: 400px;
-        height: 200px;
+        height: auto;
     }
     .block1 h2{
         font-size: 30px;
@@ -210,8 +210,8 @@ header button{
             flex-direction: column;
         }
         .block1 img{
-            width: 400px;
-            height: 200px;
+            width: 300px;
+            height: auto;
         }
         .block1 h2{
             font-size: 30px;
