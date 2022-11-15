@@ -160,43 +160,23 @@ header button{
     font-size: 40px;
 }
 
-@media screen and (max-width : 600px) {
-    body{
-        overflow-x: hidden;
-    }
-    header{
-        width: 600px;
-    }
-    .block1{
-        width: 600px;
-        display: flex;
-        flex-direction: column;
-    }
-    .block2{
-        width: 600px;
-    }
-    .block3{
-        width: 600px;
-    }
-}
 
 
 @media screen and (max-width : 440px) {
     .body {
         overflow-x: hidden;
         font-size:30px;
-        width: 460px;
     }
     header{
-        width: 460px;
+        width: 100%;
     }
     .block1{
-        width: 460px;
+        width: 400px;
         display: flex;
         flex-direction: column;
     }
     .block1 img{
-        width: 400px;
+        width: 290px;
         height: auto;
     }
     .block1 h2{
@@ -206,10 +186,10 @@ header button{
         font-size: 20px;
     }
     .block2{
-        width: 460px;
+        width: 400px;
     }
     .block2__info{
-        width: 200px;
+        width: 400px;
         height: 200px;
     }
     .block2__info h3{
@@ -219,25 +199,29 @@ header button{
         font-size: 15px;
         width: 200px;
     }
-    .block2__info button{
-        padding: 3px 51px;
-        margin: 5px 50px 20px;
-    }
+   
     .block3{
-        width: 460px;
+        width: 400px;
+       
     }
+    .block3 h2{
+        font-size: 20px;
+    }
+    .block3 p{
+        font-size: 15px;
+        width: 300px;
+    }
+
     .block4{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);  
-        background-color: black;
-        color: white;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
     
     }
     
     .block4 img{
-        width: 400px;
-        height: 200px;
+        width: 200px;
+        height: 150px;
     }
     
     .block4-right{
@@ -247,21 +231,37 @@ header button{
         grid-column: 1;
         position: relative;
         top: 50px;
-        left: 200px;
+        left: 20px;
         font-size: 15px;
     }
     .block4 p{
         width: 300px;
+        font-size: 15px;
     }
     .block4 span{
         position: relative;
         top: 200px;
+        left:30px ;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 20px;
     }
 }
 
-
+@media screen and (max-width: 250px) {
+    header{
+        width: 400px;
+    }
+    body{
+        width: auto;
+    }
+    .block1{
+        display: flex;
+        width: 400px;
+    }
+    .block1 p{
+        width: 200px;
+    }
+}
     @media screen and (max-width : 240px) {
         .body {
             overflow-x: hidden;
@@ -269,15 +269,15 @@ header button{
             width: 400px;
         }
         header{
-            width: 400px;
+            width: 100%;
         }
         .block1{
-            width: 250px;
+            width: 200px;
             display: flex;
             flex-direction: column;
         }
         .block1 img{
-            width: 250px;
+            width: 100px;
             height: auto;
         }
         .block1 h2{
@@ -308,5 +308,14 @@ header button{
             width: 380px;
         }
         
+}
+@media screen and (max-width : 700px)  {
+    .block1{
+        display: flex;
+        flex-direction: column;
+    }
+    .block1 p{
+        font-size: 20px;
+    }
 }
 
