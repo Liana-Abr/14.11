@@ -127,39 +127,91 @@ header button{
     font-weight: bold;
 }
 .block4{
+    min-height: 700px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  
-    background-color: black;
-    color: white;
+    background-color: #dfdfdf;
+    color: black;
 
 }
+.block{
+    z-index: 99;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 300px;
+}
+.block p{
+    width: 150px;
+    margin: 143px 100px 30px;
+}
+.block .line{
+    height: 3px;
+    transform-origin: right center;
+    margin: 0 auto 0 0;
+    background-color: black;
 
+}
+.block img{
+    z-index: 99;
+}
+.block button{
+    background-color: black;
+    color: #fff;
+    padding: 10px 34px;
+    margin: 20px 100px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.white-block{
+    position: absolute;
+    left: 560px;
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    z-index: 0;
+}
 .block4 img{
     width: 450px;
     height: 300px;
 }
 
-.block4-right{
-    grid-column: 2;
-}
-.block4__left{
-    grid-column: 1;
-    position: relative;
-    top: 100px;
-    left: 400px;
-    font-size: 20px;
-}
 .block4 p{
     width: 300px;
 }
-.block4 span{
-    position: relative;
-    top: 400px;
+.block span{
+    position: absolute;
+    right: 38%;
+    font-size: 30px;
     font-weight: 700;
-    font-size: 40px;
+}
+.block4-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
+.block4-2 h3{
+    font-size: 40px;
+}
+.block4-2 p{
+    margin: 0 0 20px 0;
+    color: gray;
+    font-weight: 200;
+}
+
+.block4-2 img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 35px;
+    
+}
 
 
 @media screen and (max-width : 440px) {
@@ -171,7 +223,7 @@ header button{
         width: 100%;
     }
     .block1{
-        width: 400px;
+        
         display: flex;
         flex-direction: column;
     }
@@ -212,39 +264,12 @@ header button{
         width: 300px;
     }
 
-    .block4{
-        height: 400px;
+    .block{
         display: flex;
         flex-direction: column;
-    
     }
     
-    .block4 img{
-        width: 200px;
-        height: 150px;
-    }
     
-    .block4-right{
-        grid-column: 2;
-    }
-    .block4__left{
-        grid-column: 1;
-        position: relative;
-        top: 50px;
-        left: 20px;
-        font-size: 15px;
-    }
-    .block4 p{
-        width: 300px;
-        font-size: 15px;
-    }
-    .block4 span{
-        position: relative;
-        top: 200px;
-        left:30px ;
-        font-weight: 700;
-        font-size: 20px;
-    }
 }
 
 @media screen and (max-width: 250px) {
@@ -260,6 +285,10 @@ header button{
     }
     .block1 p{
         width: 200px;
+    }
+    .block{
+        display: flex;
+        flex-direction: column;
     }
 }
     @media screen and (max-width : 240px) {
@@ -307,15 +336,30 @@ header button{
         .block3{
             width: 380px;
         }
+        .block{
+            display: flex;
+            flex-direction: column;
+        }
         
 }
 @media screen and (max-width : 700px)  {
     .block1{
+        max-width: 607px;
         display: flex;
         flex-direction: column;
     }
     .block1 p{
         font-size: 20px;
+    }
+    .block4{
+        max-width: 607px;
+        display: flex;
+        flex-direction: column;
+   
+    }
+    .block{
+        display: flex;
+        flex-direction: column;
     }
 }
 
